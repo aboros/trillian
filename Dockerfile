@@ -20,4 +20,8 @@ RUN { \
 		echo 'opcache.enable_cli=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
+RUN usermod -u 501 www-data
+RUN usermod -a -G users www-data
+RUN chown -R www-data:www-data /var/www/html
+
 WORKDIR /var/www/html
