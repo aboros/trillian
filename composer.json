@@ -1,0 +1,23 @@
+{
+    "name": "aboros/trillian",
+    "description": "Custom Drupal installation profile for experimenting and fun.",
+    "type": "project",
+    "require": {
+        "drupal/recommended-project": "^10",
+        "drush/drush": "^10.6"
+    },
+    "require-dev": {
+        "drupal/devel": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aboros\\Trillian\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adam Boros",
+            "email": "hunaboros@gmail.com"
+        }
+    ]
+}
